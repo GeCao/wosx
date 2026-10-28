@@ -38,3 +38,5 @@ build/
 build_debug/
 .vscode/
 .venv/
+
+.vscode

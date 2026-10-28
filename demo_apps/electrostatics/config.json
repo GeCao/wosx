@@ -15,7 +15,7 @@
         "sliceResolutionPow2": 8
     },
     "output": {
-        "visualizeProblem": true,
+        "visualizeProblem": false,
         "electricPotentialFile": "solutions/electric_potential.png",
         "electricFieldMagnitudeFile": "solutions/electric_field_magnitude.png",
         "electricPotentialColormap": "plasma",
