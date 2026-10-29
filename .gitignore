@@ -40,3 +40,11 @@ build_debug/
 .venv/
 
 .vscode
+CAEML_original/
+dataset/
+data/
+assets/case8/
+# Python cache
+__pycache__/
+*.py[cod]
+wos-no-heterogeneous-interconnects-v0.10.pdf

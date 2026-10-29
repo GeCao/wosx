@@ -28,6 +28,13 @@ if(WOSX_ENABLE_GPU_SUPPORT)
     # this demo does not link polyscope, so it must emit the stb implementation itself
     target_compile_definitions(basic_2d_gpu_demo PRIVATE WOSX_DEFINE_STB_IMPLEMENTATION)
 
+    add_executable(heterogeneous_rectilinear_walk_gpu heterogeneous_layers/rectilinear_walk_gpu.cpp)
+    target_link_libraries(heterogeneous_rectilinear_walk_gpu wosx)
+
+    add_executable(heterogeneous_triangle_mesh_walk_gpu heterogeneous_layers/triangle_mesh_walk_gpu.cpp)
+    target_link_libraries(heterogeneous_triangle_mesh_walk_gpu wosx)
+    target_include_directories(heterogeneous_triangle_mesh_walk_gpu PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/deps/polyscope/deps/happly)
+
     add_executable(electrostatics electrostatics/app.cpp)
     target_link_libraries(electrostatics wosx polyscope)
     target_include_directories(electrostatics PRIVATE ${WOSX_DEMO_APPS_DEPS_INCLUDES})

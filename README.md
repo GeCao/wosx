@@ -49,6 +49,9 @@ The best way to get started is through the demo applications in [`demo_apps/`](d
   rendering on a complex Mars rover mesh with textured boundary data.
 - [`electrostatics`](demo_apps/electrostatics/): moving comb-drive
   electrostatics with interactive electric potential & field visualization.
+- [`heterogeneous_layers`](demo_apps/heterogeneous_layers/): case-8 heterogeneous
+  dielectric WoS and FEM validation, plus a GPU potential demo for PLY/OBJ
+  triangle conductors in a two-layer dielectric.
 - [`potential_flow`](demo_apps/potential_flow/): exterior potential flow around
   complex 3D shapes.
 - [`geometric_deformation`](demo_apps/geometric_deformation/): interactive

@@ -21,6 +21,8 @@ __include utils.dense_grid;
 __include utils.fcpw_geometric_queries;
 __include utils.sdf_grid_geometric_queries;
 __include point_estimation.walk_on_spheres;
+__include point_estimation.heterogeneous_interface;
+__include point_estimation.rectilinear_queries;
 __include point_estimation.walk_on_stars;
 __include variance_reduction.boundary_samplers;
 __include variance_reduction.domain_samplers;
